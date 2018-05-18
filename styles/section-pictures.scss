@@ -1,0 +1,184 @@
+
+.flex-images{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.triangle {
+    width: 0; height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #f1f4ef;
+    border-bottom: 10px solid transparent;
+    top: 50%;
+    left: -20px;
+    position: relative;
+}
+.section-pictures{
+    height: 1095px;
+    width: 100%;
+    background: #f2fefe;
+
+&__parashute{
+    background-image: url(../../img/parashute.png);
+    width: 100%;
+    height: 515px;
+    position: relative;
+    margin-bottom: 35px;
+
+}
+
+&__down-right{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   color: white;
+
+
+}
+
+&__added-area{
+    display: inline-block;
+    width: 40%;
+    height: inherit;
+    background: #f1f4ef;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+
+}
+&__mountains{
+    background-image: url(../../img/mountains.png);
+    width: 57%;
+    height: 360px;
+    position: relative;
+    display: inline-block;
+    
+}
+&__boat{
+    background-image: url(../../img/beach.png);
+    width: 41%;
+    height: 360px;
+    position: relative;
+    float: right;
+    display: inline-block;
+}
+&__eifel{
+    background-image: url(../../img/eifel.jpg);
+    width: 100%;
+    height: 555px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px;
+
+}
+&__notre-damm{
+    background-image: url(../../img/notre-dame-paris.png);
+    width: 34%;
+    height: 265px;
+    position: relative;
+    display: inline-block;
+}
+&__louvre{
+    background-image: url(../../img/louvre.png);
+    width: 62%;
+    height: 265px;
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+&__parus{
+    background-image: url(../../img/parus.png);
+    width: 100%;
+    height: 485px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px;  
+
+}
+&__miracle-garden{
+    background-image: url(../../img/miracle-garden.png);
+    width: 76%;
+    height: 375px;
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+&__burj-khalifa{
+    background-image: url(../../img/Burj_Dubai.png);
+    width: 21%;
+    height: 375px;
+    position: relative;
+    display: inline-block;
+
+}
+}
+.added-area__picture_circle{
+    background: url(../../img/sprite.png) 0px 0px;
+    width: 89px;
+    height: 89px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    margin-left: 40px;
+
+}
+.added-area__picture_mountain{
+    background: url(../../img/sprite.png) 204px 40px;
+    width: 110px;
+    height: 55px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    margin-left: 40px;
+    
+
+}
+.added-area__picture_palm{
+    background: url(../../img/sprite.png) 90px 0px;
+    width: 90px;
+    height: 90px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    margin-left: 40px;
+
+}
+.added-area__text{
+    color: #7f8080;
+    font-family: "Lato-Regular";
+    font-size:12px;
+    line-height: 27px;
+    margin-left: 40px;
+}
+.added-area__header-text{
+font-family: "Lato-Regular";
+color: #29d9c2;
+font-size: 20px;
+margin-left: 40px;
+margin-bottom: 27px;
+}
+
+#canvas,#canvas1,#canvas2,#canvas3,#canvas4,#canvas5,#canvas6,#canvas7,#canvas8{
+display:none;
+}
+
+.pagination{
+    clear: left;
+}
+
+.center{
+    margin-top: 75px;
+    margin: 0 auto;
+    width: 80px;
+    padding: 80px;
+}
+
+#page1{
+    display: inline-block;
+}
+#page2{
+    display: none;
+}
+#page3{
+    display: none;
+}
+.blue{
+    color: #01a2a6;
+}

@@ -1,0 +1,754 @@
+.section-wrapper {
+  background: rgba(155, 221, 216, 0.4);
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; }
+
+.section-header {
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  background: url(../../img/header.png) bottom no-repeat; }
+  .section-header__navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+  .section-header__nav-item {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 40px;
+    padding: 8px;
+    border: 4px solid transparent; }
+  .section-header__nav-item:hover {
+    border: 4px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white; }
+  .section-header__header-info {
+    text-align: center; }
+  .section-header__header-main {
+    color: #fff;
+    font-family: "Chunkfive";
+    font-size: 68px;
+    margin-bottom: 27px;
+    text-transform: uppercase; }
+  .section-header__header-submain {
+    color: #fff;
+    font-family: "Lato-Regular";
+    font-size: 17px;
+    margin-bottom: 27px; }
+  .section-header__button-navigation {
+    width: 20%;
+    background-color: #ffffa6;
+    border-color: #ffffa6;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    font-family: "Lato-Black", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 40%;
+    border-width: 2px;
+    cursor: pointer;
+    color: #10273d;
+    text-align: center;
+    text-decoration: none; }
+
+.blue-text {
+  color: #01a2a6;
+  display: inline; }
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: -20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none; }
+
+.modalDialog:target {
+  display: block;
+  pointer-events: auto; }
+
+.modal-style {
+  width: 670px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff; }
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000; }
+
+.close:hover {
+  background: #00d9ff; }
+
+.animation {
+  background: url(../../img/animation.gif);
+  width: 648px;
+  height: 648px; }
+
+.img-float {
+  float: left;
+  margin-top: 75px;
+  margin-right: 100px;
+  width: 460px;
+  height: 265px; }
+
+.section-about {
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row; }
+  .section-about__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .section-about__main-text {
+    color: #29d9c2;
+    font-family: "Chunkfive";
+    font-size: 45px;
+    margin-bottom: 20px; }
+  .section-about__submain-text {
+    color: #777777;
+    font-family: "Lato-Regular";
+    font-size: 17px;
+    line-height: 27px; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row; }
+
+.section-destination {
+  height: 365px;
+  background: #f2fefe; }
+  .section-destination__text {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+  .section-destination__main-text {
+    color: #29d9c2;
+    font-family: "Chunkfive";
+    font-size: 47px;
+    margin-bottom: 27px;
+    display: inline-block;
+    margin-top: 75px;
+    margin-left: 100px; }
+  .section-destination__submain-text {
+    width: 70%;
+    color: #777777;
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    margin-bottom: 27px;
+    line-height: 27px;
+    margin-left: 100px; }
+  .section-destination__info {
+    width: 20%;
+    color: #c1c1c1;
+    font-family: "Lato-Regular";
+    display: inline-block;
+    margin-right: 0px; }
+
+.input_form {
+  border-radius: 15px;
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  margin-left: 100px; }
+
+.circle_word {
+  background-color: #c1c1c1;
+  padding: 2px 9px 2px 9px;
+  border-radius: 15px;
+  color: white;
+  font-family: "Lato-Regular"; }
+
+.flex-images {
+  display: flex;
+  flex-direction: column;
+  overflow: auto; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #f1f4ef;
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  left: -20px;
+  position: relative; }
+
+.section-pictures {
+  height: 1095px;
+  width: 100%;
+  background: #f2fefe; }
+  .section-pictures__parashute {
+    background-image: url(../../img/parashute.png);
+    width: 100%;
+    height: 515px;
+    position: relative;
+    margin-bottom: 35px; }
+  .section-pictures__down-right {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white; }
+  .section-pictures__added-area {
+    display: inline-block;
+    width: 40%;
+    height: inherit;
+    background: #f1f4ef;
+    position: absolute;
+    top: 0%;
+    left: 60%; }
+  .section-pictures__mountains {
+    background-image: url(../../img/mountains.png);
+    width: 57%;
+    height: 360px;
+    position: relative;
+    display: inline-block; }
+  .section-pictures__boat {
+    background-image: url(../../img/beach.png);
+    width: 41%;
+    height: 360px;
+    position: relative;
+    float: right;
+    display: inline-block; }
+  .section-pictures__eifel {
+    background-image: url(../../img/eifel.jpg);
+    width: 100%;
+    height: 555px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px; }
+  .section-pictures__notre-damm {
+    background-image: url(../../img/notre-dame-paris.png);
+    width: 34%;
+    height: 265px;
+    position: relative;
+    display: inline-block; }
+  .section-pictures__louvre {
+    background-image: url(../../img/louvre.png);
+    width: 62%;
+    height: 265px;
+    position: relative;
+    display: inline-block;
+    float: right; }
+  .section-pictures__parus {
+    background-image: url(../../img/parus.png);
+    width: 100%;
+    height: 485px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px; }
+  .section-pictures__miracle-garden {
+    background-image: url(../../img/miracle-garden.png);
+    width: 76%;
+    height: 375px;
+    position: relative;
+    display: inline-block;
+    float: right; }
+  .section-pictures__burj-khalifa {
+    background-image: url(../../img/Burj_Dubai.png);
+    width: 21%;
+    height: 375px;
+    position: relative;
+    display: inline-block; }
+
+.added-area__picture_circle {
+  background: url(../../img/sprite.png) 0px 0px;
+  width: 89px;
+  height: 89px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  margin-left: 40px; }
+
+.added-area__picture_mountain {
+  background: url(../../img/sprite.png) 204px 40px;
+  width: 110px;
+  height: 55px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  margin-left: 40px; }
+
+.added-area__picture_palm {
+  background: url(../../img/sprite.png) 90px 0px;
+  width: 90px;
+  height: 90px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  margin-left: 40px; }
+
+.added-area__text {
+  color: #7f8080;
+  font-family: "Lato-Regular";
+  font-size: 12px;
+  line-height: 27px;
+  margin-left: 40px; }
+
+.added-area__header-text {
+  font-family: "Lato-Regular";
+  color: #29d9c2;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-bottom: 27px; }
+
+#canvas, #canvas1, #canvas2, #canvas3, #canvas4, #canvas5, #canvas6, #canvas7, #canvas8 {
+  display: none; }
+
+.pagination {
+  clear: left; }
+
+.center {
+  margin-top: 75px;
+  margin: 0 auto;
+  width: 80px;
+  padding: 80px; }
+
+#page1 {
+  display: inline-block; }
+
+#page2 {
+  display: none; }
+
+#page3 {
+  display: none; }
+
+.blue {
+  color: #01a2a6; }
+
+.flex-container-ittinery {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.set-ittinery__flex {
+  width: 100%; }
+
+.section-ittinery {
+  height: 1000px;
+  display: flex; }
+  .section-ittinery__main-text {
+    color: #29d9c2;
+    font-family: "Chunkfive";
+    font-size: 45px;
+    margin-bottom: 27px;
+    display: inline-block;
+    margin-top: 80px;
+    text-align: center; }
+  .section-ittinery__submain-text {
+    color: #777777;
+    font-family: "Lato-Regular";
+    font-size: 17px;
+    margin-bottom: 27px;
+    line-height: 27px; }
+  .section-ittinery__set-ittinery {
+    width: 57%;
+    height: 715px;
+    border-radius: 5px;
+    background: #ffffa6;
+    position: relative;
+    display: inline-block; }
+  .section-ittinery__time-calculating {
+    text-align: right;
+    color: #29d9c2;
+    font-family: "Lato-Regular";
+    font-weight: bold;
+    margin-right: 40px; }
+
+.set-ittinery__title {
+  height: 75px;
+  background-image: url(../../img/mountain-title.png);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 30px; }
+
+.set-ittinery__schedule_day {
+  color: #29d9c2;
+  font-family: "Lato-Regular";
+  font-weight: bold;
+  margin-left: 45px; }
+
+.set-ittinery__schedule_date {
+  background: #ffffa6;
+  border: 0px;
+  color: #29d9c2;
+  font-family: "Lato-Regular";
+  font-weight: bold;
+  float: right; }
+
+.set-ittinery__schedule {
+  margin-bottom: 25px; }
+
+#sec_1-1, #sec_1-2 {
+  width: 90%;
+  height: 90px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  outline: 6px dotted #e8e897;
+  margin-left: 5%;
+  text-align: center; }
+
+#set-ittinery__sec-1-1, #set-ittinery__sec-1-2 {
+  line-height: 90px;
+  text-align: center;
+  color: #d8cb7d;
+  font-family: "Lato-Regular";
+  font-weight: bold;
+  display: initial; }
+
+#sec_2-1, #sec_2-2, #sec_2-3 {
+  width: 100%;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+
+#target-drag1, #target-drag2, #target-drag3 {
+  width: 90%;
+  height: 50px; }
+
+.section-ittinery__list-of-destination {
+  width: 40%;
+  height: 715px;
+  float: right;
+  display: inline-block; }
+
+.list-of-destination__title {
+  color: #29d9c2;
+  font-family: "Lato-Regular";
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.list-of-destination__line {
+  width: 70px;
+  border: 3px solid #a5efe5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px; }
+
+.list-of-destination__drag-item {
+  font-size: 25px;
+  font-family: "LatoLight";
+  color: #626262;
+  margin-left: 30px;
+  margin-top: 20px;
+  display: inline-block; }
+
+#float1, #float2, #float3 {
+  float: right; }
+
+.list-of-destination__picture_mountain {
+  background: url(../../img/sprite.png) 204px 40px;
+  width: 110px;
+  height: 55px; }
+
+.list-of-destination__picture_palm {
+  background: url(../../img/sprite.png) 90px -13px;
+  width: 90px;
+  height: 80px;
+  position: relative;
+  top: -10px; }
+
+.list-of-destination__picture_circle {
+  background: url(../../img/sprite.png) 0px 0px;
+  width: 89px;
+  height: 89px;
+  position: relative;
+  top: -20px; }
+
+.list-of-destination__estimated-time {
+  font-family: "LatoLight";
+  font-size: 15px;
+  margin-top: 10px; }
+
+#map {
+  display: none;
+  height: 100%;
+  position: relative; }
+
+.section-map {
+  height: 670px;
+  width: 100%; }
+  .section-map__form {
+    height: 670px;
+    width: 100%;
+    background-image: url(../../img/map.png);
+    display: block; }
+  .section-map__map {
+    height: 670px;
+    width: 100%;
+    background-color: rgba(48, 176, 177, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; }
+  .section-map__header {
+    color: white;
+    font-size: 55px;
+    font-family: "Chunkfive"; }
+  .section-map__find-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+
+.find-us__input-form {
+  width: 40%;
+  height: 345px; }
+
+.find-us__adress {
+  width: 38%;
+  height: 222px; }
+
+.find-us__input-form_email {
+  width: 100%;
+  height: 55px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border: 1px white;
+  font-family: "Lato-Italic";
+  font-size: 14px;
+  text-indent: 30px; }
+
+.find-us__input-form_company {
+  width: 48%;
+  height: 55px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px white;
+  font-family: "Lato-Italic";
+  font-size: 14px;
+  text-indent: 30px; }
+
+.find-us__input-form_subject {
+  width: 48%;
+  height: 55px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px white;
+  float: right;
+  font-family: "Lato-Italic";
+  font-size: 14px;
+  text-indent: 30px; }
+
+.find-us__input-form_textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px white;
+  font-family: "Lato-Italic";
+  resize: none;
+  font-size: 14px;
+  text-indent: 30px;
+  padding-top: 20px; }
+
+.find-us__input-form_button {
+  border-radius: 30px;
+  background-color: #c3f37f;
+  opacity: 0.902;
+  color: white;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 20px;
+  width: 34%;
+  height: 67px;
+  padding-top: 24px;
+  text-align: center;
+  text-decoration: none; }
+
+.adress__header {
+  font-family: "LatoLight";
+  color: white;
+  font-size: 35px;
+  margin-bottom: 65px; }
+
+.adress__info_city {
+  font-family: "Lato-Regular";
+  color: white;
+  font-size: 15px; }
+
+.adress__info_mobile {
+  font-family: "Lato-Regular";
+  color: white;
+  font-size: 15px; }
+
+#findonmap {
+  color: #fff772;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 17px;
+  margin-left: 25px; }
+
+.adress__info_picture1 {
+  background: url(../../img/sprite-adress.png) 0px 0px;
+  width: 13px;
+  height: 11px;
+  float: left;
+  margin-right: 10px; }
+
+.adress__info_picture2 {
+  background: url(../../img/sprite-adress.png) 13px 0px;
+  width: 14px;
+  height: 11px;
+  float: left;
+  margin-right: 10px; }
+
+.section-subscribe {
+  height: 230px;
+  background-color: #bdf271;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .section-subscribe__header {
+    font-family: "ChunkFive";
+    font-size: 50px;
+    color: white; }
+  .section-subscribe__form {
+    width: 33%; }
+  .section-subscribe__submain {
+    color: white;
+    font-family: "Lato-Regular";
+    font-size: 14px; }
+  .section-subscribe__input-form_email {
+    width: 85%;
+    height: 55px;
+    padding-left: 2%;
+    font-family: "Lato-Italic";
+    font-size: 13px;
+    display: inline-block;
+    position: relative; }
+  .section-subscribe__button {
+    width: 4%;
+    height: 55px;
+    background-color: #01a2a6;
+    color: white;
+    font-size: 45px;
+    display: inline-block;
+    position: absolute;
+    right: 13%; }
+
+@font-face {
+  font-family: 'Chunkfive';
+  src: url(../../fonts/Chunkfive.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(../../fonts/Lato-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url(../../fonts/Lato-Black.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'LatoLight';
+  src: url(../../fonts/Lato-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url(../../fonts/Lato-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .section-header__navigation {
+    flex-direction: column; }
+  .section-header__header-submain {
+    display: none; }
+  .section-pictures__mountains, .section-pictures__notre-damm, .section-pictures__burj-khalifa {
+    display: block;
+    width: 100%; }
+  .section-pictures__boat, .section-pictures__louvre, .section-pictures__miracle-garden {
+    float: left;
+    margin-top: 20px;
+    width: 100%; }
+  .section-pictures {
+    height: 100%; }
+  .section-ittinery__set-ittinery {
+    display: block;
+    left: 30%; }
+  .section-ittinery {
+    height: 100%; }
+  .section-ittinery__list-of-destination {
+    left: -20%;
+    position: relative; }
+  .find-us__input-form {
+    display: none; }
+  .find-us__adress {
+    width: 100%; }
+  .section-subscribe__button {
+    display: none; } }
+
+.app-wrapper {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column; }
+
+.app-center {
+  width: 81%;
+  height: 100%;
+  margin: auto;
+  color: #FFF;
+  display: flex;
+  flex-direction: column; }
+
+#toTop {
+  width: 100px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  display: none;
+  color: #333;
+  font-family: verdana;
+  font-size: 11px; }

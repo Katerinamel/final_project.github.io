@@ -1,0 +1,115 @@
+
+@import 'section-header.scss';
+@import 'section-about.scss';
+@import 'section-destination.scss';
+@import 'section-pictures.scss';
+@import 'section-ittinery.scss';
+@import 'section-map.scss';
+@import 'section-subscribe.scss';
+
+@font-face {
+    font-family: 'Chunkfive';
+    src: url(../../fonts/Chunkfive.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(../../fonts/Lato-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Black';
+    src: url(../../fonts/Lato-Black.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LatoLight';
+    src: url(../../fonts/Lato-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url(../../fonts/Lato-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .section-header__navigation {
+        flex-direction:column;
+    } 
+
+    .section-header__header-submain{
+        display:none;
+    }
+    .section-pictures__mountains, .section-pictures__notre-damm,.section-pictures__burj-khalifa{
+        display:block;
+        width: 100%;
+        
+    }
+    .section-pictures__boat,.section-pictures__louvre,.section-pictures__miracle-garden{
+        float:left;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .section-pictures{
+        height: 100%;
+    }
+    .section-ittinery__set-ittinery{
+        display:block;
+        left:30%;
+    }
+    .section-ittinery{
+        height: 100%;
+    }
+    .section-ittinery__list-of-destination{
+       left: -20%;
+        position: relative;
+    }
+    .find-us__input-form{
+        display: none;
+    }
+    .find-us__adress{
+        width: 100%;
+    }
+    .section-subscribe__button{
+        display: none;
+    }
+}
+
+.app-wrapper {
+max-width: 1440px;
+display: flex;
+flex-direction: column;
+}
+.app-center {
+width: 81%;
+height: 100%;
+margin: auto;
+color: #FFF;
+display: flex;
+flex-direction: column;
+}
+
+#toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    top:10px; 
+    left:10px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+    }
+
+
+
+

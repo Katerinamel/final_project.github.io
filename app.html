@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final project</title>
+    <meta charset="utf-8" />
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="node_modules/reset-css/reset.css" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="build/styles/result.min.css ">
+    <script src="js/to-top.js"></script>
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <header class="section-header">
+            <div class="section-wrapper">
+                <div class="app-center">
+                    <div class="flex-container-header">
+
+                        <nav class="section-header__navigation">
+                            <a href="#" class="section-header__nav-item">Home</a>
+                            <a href="#destination" class="section-header__nav-item">Destination</a>
+                            <a href="#ittinary" class="section-header__nav-item">Ittinary</a>
+                            <a href="#" class="section-header__nav-item">Rewiew</a>
+                            <a href="#contact" class="section-header__nav-item">Contact</a>
+                        </nav>
+                        <div class="section-header__header-info">
+                            <h1 class="section-header__header-main">Lets get
+                                <div class="blue-text">lost</div>
+                            </h1>
+                            <h2 class="section-header__header-submain">Malang will never dissapointed you.</h2>
+                            <h2 class="section-header__header-submain">From every step you took you amazed and suddenly fallin love with Malang</h2>
+                        </div>
+                        <a href="#openmodal" class="section-header__button-navigation">Set ittinery now</a>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="openmodal" class="modalDialog">
+
+                    <div class="modal-style">
+                        <a href="#close" title="Закрыть" class="close">X</a>
+                        <div class="animation">Hello, World!</div>
+                    </div>
+
+                    <div id="out"></div>
+                </div>
+        </header>
+
+        <div class="section-about">
+            <div class="app-center">
+                <div class="flex-container">
+                    <img class="img-float" src="img/house.png">
+                    <div class="section-about__text">
+                        <div class=section-about__main-text>City of
+                            <span class="blue-text">Love</span>
+                        </div>
+
+                        <div class="section-about__submain-text">Malang is the second largest city in East Java province, Indonesia. It has a history dating back
+                            to the ancient Mataram Kingtom. The cityis famous for its cool temperature. Peaple in East Java
+                            sometimes call it "Paris of East Java".</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-destination" id="destination">
+            <div class="app-center">
+                <div class="flex-container">
+                    <div class="section-destination__text">
+                        <div class=section-destination__main-text>Des<div class="blue-text">tination</div>
+                        </div>
+
+                        <div class="section-destination__submain-text">Being around by many mountain, Malang not only came with mountian vacation, but our beach, cultural
+                            spot, and Human Interest is worth to experienced.
+                        </div>
+                        <div class="ui-widget">
+
+                            <input class="input_form" id="tags" placeholder="&#128269; search destination">
+                        </div>
+                    </div>
+                    <a href="#" class="section-destination__info">
+                        <span class="circle_word">i</span>see basic regulation</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="section-pictures">
+            <div class="app-center">
+                <div id="page1">
+                    <div class="flex-images">
+                        <div class="section-pictures__parashute">
+                            <span class="section-pictures__down-right" id="target"> see more &#8594;</span>
+
+                            <div class="section-pictures__added-area" id="canvas">
+                                <div class="triangle"></div>
+                                <div class="added-area__picture_circle"></div>
+                                <div class="added-area__header-text">
+                                    Batu
+                                </div>
+                                <div class="added-area__text">
+                                    is a city located in East Java Province of Indonesia. It is situated abot 20 km to the norhwest Malang. Formely, it was a
+                                    part of Malang Regency; but in 2001 Batu became an independent city. A population of
+                                    190,000 people, it lies on the southern slopes of Gurung Welirang. Its population largely
+                                    consists of Japanese.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="section-pictures__mountains">
+                                <span class="section-pictures__down-right" id="target1"> see more &#8594;</span>
+                                <div class="section-pictures__added-area" id="canvas1">
+                                    <div class="triangle"></div>
+                                    <div class="added-area__picture_mountain"></div>
+                                    <div class="added-area__header-text">
+                                        Bromo
+                                    </div>
+                                    <div class="added-area__text">
+                                        Mount Bromo is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2.329 metres (7,641 ft) it is
+                                        not the highest peak of the massif, but is the most well known.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-pictures__boat">
+                                <span class="section-pictures__down-right" id="target2"> see more &#8594;</span>
+                                <div class="section-pictures__added-area" id="canvas2">
+                                    <div class="triangle"></div>
+                                    <div class="added-area__picture_palm"></div>
+                                    <div class="added-area__header-text">
+                                        Beaches
+                                    </div>
+                                    <div class="added-area__text">
+                                        There are a lot of great beaches. You can choose entertaiment you want.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page2">
+
+                    <div class="section-pictures__eifel">
+                        <span class="section-pictures__down-right" id="target3"> see more &#8594;</span>
+
+                        <div class="section-pictures__added-area" id="canvas3">
+                            <div class="triangle"></div>
+
+                            <div class="added-area__header-text">
+                                Paris
+                            </div>
+                            <div class="added-area__text">
+                                The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave
+                                Eiffel, whose company designed and built the tower.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-pictures__notre-damm">
+                        <span class="section-pictures__down-right" id="target4"> see more &#8594;</span>
+                        <div class="section-pictures__added-area" id="canvas4">
+                            <div class="triangle"></div>
+
+                            <div class="added-area__header-text">
+                                Notre Dame
+                            </div>
+                            <div class="added-area__text">
+                                it is among the largest and best-known church buildings in the Catholic Church in France, and in the world.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-pictures__louvre">
+                        <span class="section-pictures__down-right" id="target5"> see more &#8594;</span>
+                        <div class="section-pictures__added-area" id="canvas5">
+                            <div class="triangle"></div>
+
+                            <div class="added-area__header-text">
+                                Louvre
+                            </div>
+                            <div class="added-area__text">
+                                is the world's largest art museum and a historic monument in Paris, France. Approximately 38,000 objects from prehistory
+                                to the 21st century are exhibited over an area of 72,735 square metres.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page3">
+
+                    <div class="section-pictures__parus">
+                        <span class="section-pictures__down-right" id="target6"> see more &#8594;</span>
+
+                        <div class="section-pictures__added-area" id="canvas6">
+                            <div class="triangle"></div>
+
+                            <div class="added-area__header-text">
+                                Burj Al Arab
+                            </div>
+                            <div class="added-area__text">
+                                is a 7-star luxury hotel located in Dubai, United Arab Emirates.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-pictures__burj-khalifa">
+                        <span class="section-pictures__down-right" id="target7"> see more &#8594;</span>
+                        <div class="section-pictures__added-area" id="canvas7">
+                            <div class="triangle"></div>
+
+                            <div class="added-area__header-text">
+                                Burj Khalifa
+                            </div>
+                            <div class="added-area__text">
+                                is a skyscraper in Dubai, United Arab Emirates.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-pictures__miracle-garden">
+                        <span class="section-pictures__down-right" id="target8"> see more &#8594;</span>
+                        <div class="section-pictures__added-area" id="canvas8">
+                            <div class="triangle"></div>
+
+                            <div class="added-area__header-text">
+                                Dubai miracle garden
+                            </div>
+                            <div class="added-area__text">
+                                is a flower garden located in the district of Dubailand, Dubai, United Arab Emirates.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation example" class="center">
+                    <ul class="pagination blue">
+
+                        <li class="page-item">
+                            <a class="page-link" id="page-1-pagination">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" id="page-2-pagination">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" id="page-3-pagination">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="section-ittinery" id="ittinary">
+            <div class="app-center">
+                <div class="flex-container-ittinery">
+                    <div class=section-ittinery__main-text>Set
+                        <div class="blue-text">Ittinery</div>
+                    </div>
+                    <div class="section-ittinery__submain-text">Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.
+                    </div>
+                    <div class="set-ittinery__flex">
+                        <div class="section-ittinery__set-ittinery">
+                            <div class="set-ittinery__title"></div>
+                            <div class="set-ittinery__schedule">
+                                <div>
+                                    <span class="set-ittinery__schedule_day">Day 1</span>
+                                    <input class="set-ittinery__schedule_date" type="text" value="dd-mm-yy" onfocus="this.select();_Calendar.lcs(this)" onclick="event.cancelBubble=true;this.select();_Calendar.lcs(this)"
+                                        data-yearfrom="-80" data-yearto="5">
+                                </div>
+                                <section id="sec_1-1">
+                                    <div id="set-ittinery__sec-1-1">Drag Destination Here</div>
+                                </section>
+                                <section id="sec_1-2">
+                                    <div id="set-ittinery__sec-1-2">Drag Destination Here</div>
+                                </section>
+                            </div>
+                            <div id="check" class="section-ittinery__time-calculating">Total time:
+                                <span id="result"></span> hours</div>
+                        </div>
+                        <div class="section-ittinery__list-of-destination">
+                            <div class="list-of-destination__title">
+                                List of Destination
+                            </div>
+                            <div class="list-of-destination__line"></div>
+
+
+                            <section id="sec_2-1">
+                                <div class="list-of-destination__drag-item" id="target-drag1" draggable="true">
+                                    Mt. Bromo
+                                    <div class="list-of-destination__picture_mountain" id="float1"></div>
+                                    <div class="list-of-destination__estimated-time">estimated time:
+                                        <span id="time1">5</span> Hours</div>
+                                </div>
+                            </section>
+                            <section id="sec_2-2">
+                                <div class="list-of-destination__drag-item" id="target-drag2" draggable="true">
+                                    Beaches
+                                    <div class="list-of-destination__picture_palm" id="float2"></div>
+                                    <div class="list-of-destination__estimated-time">estimated time:
+                                        <span id="time2">4</span> Hours</div>
+                                </div>
+                            </section>
+                            <section id="sec_2-3">
+                                <div class="list-of-destination__drag-item" id="target-drag3" draggable="true">
+                                    Batu
+                                    <div class="list-of-destination__picture_circle" id="float3"></div>
+                                    <div class="list-of-destination__estimated-time">estimated time:
+                                        <span id="time3">2</span> Hours</div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-map" id="contact">
+            <div class="section-map__form" id="map-static">
+                <div class="section-map__map">
+                    <div class="section-map__header">Contact</div>
+                    <div class="section-map__find-us">
+                        <div class="find-us__input-form">
+                               <form action="" method="post">
+                                <input id="email" class="find-us__input-form_email" name="email" type="email" placeholder="Your Email" required>
+                                <input id="user" class="find-us__input-form_company" name="user" type="text" placeholder="Company" required>
+                                <input id="subject" class="find-us__input-form_subject" name="subject" type="text" placeholder="Subject" required>
+                                <textarea id="message" class="find-us__input-form_textarea" name="message" type="text" placeholder="Your Message"></textarea>
+                                <a href="mailto:foliac@gmail.com" class="find-us__input-form_button" >send message</a>
+                        </form>
+                            </div>
+                        
+                        <div class="find-us__adress">
+                            <div class="adress__header">
+                                    You Can Find Us Here
+                            </div>
+                            <div class="adress__info">
+                                <div class="adress__info_city">
+                                    <div class="adress__info_picture1"></div>Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang </div>
+                                <div id="findonmap">Find on maps</div>
+                                <div class="adress__info_mobile">
+                                    <div class="adress__info_picture2"></div>(+62)657 68 96</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div id="map"></div>
+            </div>
+            <script src="js/map-sidney.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKz_juWY2p_RgQ4uTd2XAAxMwR7uMBDY0&callback=initMap">
+            </script>
+            <footer class="section-subscribe">
+                <div><div class="section-subscribe__header">Keep in Touch</div>
+                <div class="section-subscribe__submain">We Will Give you latest information about Malang</div></div>
+                <div class="section-subscribe__form"><input id="email" class="section-subscribe__input-form_email" name="email" type="email" placeholder="Type Email Here for Subscribe" required>
+                <button class="section-subscribe__button" type="submit" value="Subscribe">></button></div>
+            </footer>
+            <div id= "toTop" > ^ To top</div>
+        </div>
+        <script src="js/search_form.js"></script>
+        <script src="js/availible_tags.js"></script>
+        <script src="js/show_added_area.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src="js/Drag-n-drop.js"></script>
+        <script src="js/time-calculating.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/show-map.js"></script>
+</body>
+
+</html>
